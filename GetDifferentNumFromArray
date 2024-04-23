@@ -1,0 +1,10 @@
+ //Get the different value from array 
+ //Sample input let arr = [1,2,1,2,5,5,6]
+ //Expected output is 6
+ //Get different one 
+ //Note: Please refere Bitwise operator
+   var res = 0
+   for num in arr {
+     res = (res ^ num)
+  }
+  print(res);
