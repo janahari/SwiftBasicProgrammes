@@ -1,0 +1,14 @@
+let ranks = [2,2,3,4,4,2,1,1,0,0]
+//Print the number altest 2 times 
+
+var seenNums = Set<Int>()
+var seenTwiceNums = Set<Int>()
+
+for rank in ranks {
+  if seenNums.contains(rank) {
+     seenTwiceNums.insert(rank)
+  } else {
+    seenNums.insert(rank)
+  }
+}
+//print(seenTwiceNums)
