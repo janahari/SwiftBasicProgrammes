@@ -1,0 +1,31 @@
+//print(seenTwiceNums)
+//Print prime nums fron 1 to n 
+let n=40
+var primVals = [Int]()
+for i in 2..<n {
+  if isPrime(i){
+     primVals.append(i)
+  }
+
+}
+//print(primVals)
+
+func isPrime(_ n: Int) -> Bool {
+   if n <= 1 {
+    return false
+   }
+  if n<=3 {
+    return true
+  }
+    if (n%2 == 0 || n%3 == 0){
+      return false
+    }
+     var i = 5
+     while i * i <= n {
+       if n % i == 0 || n % (i+2) == 0 {
+        return false
+       }
+       i = i+6
+     }
+    return true
+}
