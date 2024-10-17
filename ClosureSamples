@@ -1,0 +1,13 @@
+/*
+Closures in Swift are self-contained blocks of functionality that can be passed around and used in your code. 
+They are similar to blocks in Objective-C and lambdas in other programming languages. 
+Closures can capture and store references to any constants and variables from the surrounding context in which they are defined.
+*/
+/* Basic syntax 
+{(Param) -> Return Type in 
+}
+*/
+let digitsList = [1, 2, 3, 4, 5]
+
+let sum = digitsList.reduce(0) { $0 + $1 }
+print(sum)
